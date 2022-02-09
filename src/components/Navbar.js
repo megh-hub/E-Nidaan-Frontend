@@ -1,10 +1,11 @@
+import React from 'react'
 import logo from "../images/stethoscope.svg";
-import rect1 from "../images/Rectangle8.svg";
-import SignIn from "../components/Sign_in";
-
-const Header = () => {
+import user from "../images/User.svg";
+import doorbell from "../images/Doorbell.svg";
+import settings from "../images/Settings.svg";
+const Navbar = () => {
     return (
-        <header className='header'>
+            <navbar className='header'>
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
@@ -16,25 +17,28 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">About</a>
+                            <li className="one nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">
+                                <img id="user" src={user} alt=""/>
+                                </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
+                            <li className="two nav-item">
+                                <a className="nav-link" href="#">
+                                <img id="doorbell" src={doorbell} alt=""/>
+                                </a>
                             </li>
-                            <li>
-                                <img id="rect1" src={rect1} />
-                                <div className="btncomp">
-                                    <button className="navbtn" onClick={SignIn}>Sign In</button>
-                                </div>
+                            <li className="three nav-item">
+                                <a className="nav-link" href="#">
+                                <img id="settings" src={settings} alt=""/>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-        </header>
+        </navbar>
     )
 }
 
-export default Header
+export default Navbar

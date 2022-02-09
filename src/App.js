@@ -6,20 +6,16 @@ import About from "../src/components/About"
 import Contact from "./components/Contact";
 import DoctorsPortal from "./components/DoctorsPortal";
 import PatientsPortal from "./components/PatientsPortal";
-import Sign_in from "./components/Sign_in";
+import Navbar from "./components/Navbar";
+import Report from "../src/components/Report";
 const App = () => {
   return (
     <div className="box">
       <Header />
+      <Background />
       <Mainsection />
       <About />
       <Contact />
-      <DoctorsPortal />
-      <PatientsPortal />
-      <Sign_in />
-      {/* <Background />
-       <Header />
-      <Mainsection />  */}
     </div>
   );
 }
